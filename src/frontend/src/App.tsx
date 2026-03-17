@@ -54,104 +54,147 @@ interface StatItem {
 const PRODUCTS: Product[] = [
   {
     id: 1,
-    name: "Industrial Axial Fan AF-750",
+    name: "Mixed Flow Inline Fan CMF-500",
     category: "Electric Fans",
     description:
-      "High-efficiency axial fan for industrial ventilation, 750mm blade diameter, IP55 rated.",
-    image: "https://placehold.co/300x200/1a2744/ffffff?text=Axial+Fan",
+      "Caryaire CMF-500 mixed flow fan for efficient ventilation. Suitable for duct installations with high airflow and low noise.",
+    image: "/assets/uploads/image-5-6.png",
     badge: "Bestseller",
   },
   {
     id: 2,
-    name: "Centrifugal Blower CB-500",
+    name: "Circular Inline Fan CIF-1000",
     category: "Electric Fans",
     description:
-      "Heavy-duty centrifugal blower for high-pressure applications, 500 CFM airflow capacity.",
-    image: "https://placehold.co/300x200/1a2744/ffffff?text=Centrifugal+Blower",
+      "Caryaire CIF-1000 circular inline fan with insulated casing. Ideal for kitchen exhaust and commercial HVAC systems.",
+    image: "/assets/uploads/image-5-6.png",
+    badge: "",
   },
   {
     id: 3,
-    name: "Fan Coil Unit FCU-1200",
-    category: "Fan Coil Unit",
+    name: "Kitchen Exhaust Cabinet Fan",
+    category: "Electric Fans",
     description:
-      "4-pipe fan coil unit with EC motor technology, 1200 BTU capacity, ultra-quiet operation.",
-    image: "https://placehold.co/300x200/1a2744/ffffff?text=Fan+Coil+Unit",
+      "Caryaire CLF kitchen exhaust and cabinet fan. Effective & energy efficient for large commercial kitchens.",
+    image: "/assets/uploads/image-5-6.png",
     badge: "New",
   },
   {
     id: 4,
-    name: "Concealed FCU Pro",
+    name: "Hi-Wall Hydronic Fan Coil Unit",
     category: "Fan Coil Unit",
     description:
-      "Ceiling concealed fan coil unit for commercial spaces, compatible with all BMS systems.",
-    image: "https://placehold.co/300x200/1a2744/ffffff?text=Concealed+FCU",
-  },
-  {
-    id: 5,
-    name: "Cassette AC Unit 24K",
-    category: "Air Conditioner",
-    description:
-      "4-way cassette air conditioner, 24,000 BTU, inverter technology, R410A refrigerant.",
-    image: "https://placehold.co/300x200/1a2744/ffffff?text=Cassette+AC",
+      "Caryaire CLFW Hi-Wall Hydronic Fan Coil Unit. Available in 40 Hi-Wall and 60 Hi-Wall variants. Quiet and efficient.",
+    image: "/assets/uploads/image-2-3.png",
     badge: "Popular",
   },
   {
-    id: 6,
-    name: "Precision Air Conditioner PAC",
+    id: 5,
+    name: "Cassette Air Conditioner MC504",
     category: "Air Conditioner",
     description:
-      "Server room precision air conditioning unit with humidity control and N+1 redundancy.",
-    image: "https://placehold.co/300x200/1a2744/ffffff?text=Precision+AC",
+      "Caryaire MC504 Cassette Air Conditioner for commercial spaces. 4-way airflow distribution and energy-efficient operation.",
+    image: "/assets/uploads/image-4-5.png",
+    badge: "",
+  },
+  {
+    id: 6,
+    name: "Cassette Air Conditioner MC508",
+    category: "Air Conditioner",
+    description:
+      "Caryaire MC508 Cassette AC, higher capacity model for large commercial and industrial spaces.",
+    image: "/assets/uploads/image-4-5.png",
+    badge: "",
   },
   {
     id: 7,
-    name: "Industrial Wet-Dry Vacuum WD-80",
-    category: "Vacuum Cleaner",
+    name: "Propeller Fan Industrial",
+    category: "Propeller Fans",
     description:
-      "80L industrial wet-dry vacuum, stainless steel drum, 3000W dual-motor system.",
-    image: "https://placehold.co/300x200/1a2744/ffffff?text=Wet+Dry+Vacuum",
+      "Caryaire industrial propeller fan for wall and roof mounting. Aluminium alloy blades, robust motor, ideal for warehouses.",
+    image: "/assets/uploads/image-4-5.png",
+    badge: "",
   },
   {
     id: 8,
-    name: "HEPA Industrial Vacuum HV-30",
+    name: "Wet Dry Vacuum Cleaner WD-80",
     category: "Vacuum Cleaner",
     description:
-      "HEPA-filtered industrial vacuum for pharmaceutical and cleanroom applications.",
-    image: "https://placehold.co/300x200/1a2744/ffffff?text=HEPA+Vacuum",
-    badge: "Certified",
+      "80L industrial wet-dry stainless steel vacuum cleaner. Kruger make. From 80 to 21 Wet Dry vacuum cleaner range.",
+    image: "/assets/uploads/image-1.png",
+    badge: "New",
   },
   {
     id: 9,
-    name: "Ball Valve Series BV-DN50",
+    name: "Ball Valve DN50 Stainless Steel",
     category: "Metal Valves",
     description:
-      "Full-bore stainless steel ball valve DN50, PN40 rated, API 6D certified.",
-    image: "https://placehold.co/300x200/1a2744/ffffff?text=Ball+Valve",
+      "N-Advance full-bore stainless steel ball valve. PN40 rated, suitable for water, oil, and gas applications.",
+    image: "/assets/uploads/image-5-6.png",
+    badge: "",
   },
   {
     id: 10,
-    name: "Gate Valve GV-DN100",
+    name: "Butterfly Valve Flanged",
     category: "Metal Valves",
     description:
-      "Rising stem gate valve DN100, carbon steel body, RF flanged ends, PN16.",
-    image: "https://placehold.co/300x200/1a2744/ffffff?text=Gate+Valve",
+      "N-Advance flanged butterfly valve. Double plate check valve and balancing valve also available.",
+    image: "/assets/uploads/image-5-6.png",
+    badge: "",
   },
   {
     id: 11,
-    name: "Ultrasonic Cleaner UC-30L",
+    name: "Labman Ultrasonic Cleaner LMUC6D",
     category: "Ultrasonic Cleaner",
     description:
-      "30-litre industrial ultrasonic cleaner, 40kHz frequency, digital timer & temperature control.",
-    image: "https://placehold.co/300x200/1a2744/ffffff?text=Ultrasonic+Cleaner",
+      "Labman LMUC6D digital ultrasonic cleaner / sonicator. BMAN Scientific Instruments precision cleaning solution.",
+    image: "/assets/uploads/image-2-3.png",
     badge: "New",
   },
   {
     id: 12,
-    name: "Propeller Fan PF-1000",
-    category: "Propeller Fans",
+    name: "Weller WSD1000 Soldering Station",
+    category: "Soldering Station",
     description:
-      "Direct-drive propeller fan 1000mm, aluminium alloy blades, for wall and roof mounting.",
-    image: "https://placehold.co/300x200/1a2744/ffffff?text=Propeller+Fan",
+      "Weller WSD1000 Digital Soldering Station. Professional-grade precision soldering for electronics manufacturing.",
+    image: "/assets/uploads/image-1.png",
+    badge: "",
+  },
+  {
+    id: 13,
+    name: "RFT-V3 Reverse Power Relay",
+    category: "Electricals",
+    description:
+      "RFT-V3 Reverse Power Relay from Nodia. Advanced electrical protection relay for industrial power systems.",
+    image: "/assets/uploads/image-3-4.png",
+    badge: "",
+  },
+  {
+    id: 14,
+    name: "IFM Digital Pressure Sensor",
+    category: "Electricals",
+    description:
+      "IFM PM2224 Digital Pressure Sensor. High accuracy industrial pressure measurement for automation systems.",
+    image: "/assets/uploads/image-1-2.png",
+    badge: "Certified",
+  },
+  {
+    id: 15,
+    name: "Cotton Hand Gloves",
+    category: "Safety Items",
+    description:
+      "Industrial cotton hand gloves. Leading range of custom hand gloves from Nodia. Available in bulk quantities.",
+    image: "/assets/uploads/image-1-2.png",
+    badge: "",
+  },
+  {
+    id: 16,
+    name: "Fire Extinguisher 9L Water",
+    category: "Safety Items",
+    description:
+      "Base Fire 9-litre water fire extinguisher. Suitable for use on free-burning fires. ISI certified.",
+    image: "/assets/uploads/image-3-4.png",
+    badge: "Certified",
   },
 ];
 
@@ -160,10 +203,13 @@ const CATEGORIES = [
   "Electric Fans",
   "Fan Coil Unit",
   "Air Conditioner",
+  "Propeller Fans",
   "Vacuum Cleaner",
   "Metal Valves",
   "Ultrasonic Cleaner",
-  "Propeller Fans",
+  "Soldering Station",
+  "Electricals",
+  "Safety Items",
 ];
 
 const FAQ_ITEMS = [
@@ -390,25 +436,25 @@ export default function App() {
   const STATS: StatItem[] = [
     {
       icon: <Package className="w-6 h-6" />,
-      value: 500,
+      value: 200,
       suffix: "+",
       label: "Products Available",
     },
     {
       icon: <Users className="w-6 h-6" />,
-      value: 1000,
+      value: 500,
       suffix: "+",
       label: "Satisfied Clients",
     },
     {
       icon: <Star className="w-6 h-6" />,
-      value: 20,
+      value: 15,
       suffix: "+",
       label: "Years Experience",
     },
     {
       icon: <Globe className="w-6 h-6" />,
-      value: 50,
+      value: 10,
       suffix: "+",
       label: "Countries Served",
     },
@@ -736,37 +782,40 @@ export default function App() {
                   Our Story
                 </Badge>
                 <h2 className="text-4xl font-bold text-foreground font-display mb-6 leading-tight">
-                  20 Years of Industrial
+                  15 Years of Industrial
                   <span className="text-brand-orange"> Excellence</span>
                 </h2>
                 <p className="text-muted-foreground mb-4 leading-relaxed">
-                  Founded in 2004, Zoella Industrial has grown from a regional
-                  supplier to a global powerhouse serving clients across 50+
-                  countries. Our commitment to precision engineering, rigorous
-                  quality control, and customer-centric service has made us the
-                  preferred partner for Fortune 500 companies and independent
-                  operators alike.
+                  Founded in Noida, Uttar Pradesh, Zoella Marketing And Infra
+                  Solution is a trusted supplier of industrial equipment —
+                  specializing in HVAC systems, industrial fans, safety
+                  equipment, and electrical components. We serve clients across
+                  India and international markets with quality-assured products
+                  from leading global brands.
                 </p>
                 <p className="text-muted-foreground mb-8 leading-relaxed">
-                  Every product bearing the Zoella name undergoes multi-stage
-                  testing in our ISO 9001:2015 certified facilities before
-                  leaving the factory floor. We don't just meet standards — we
-                  set them.
+                  From Caryaire fans and fan coil units to IFM sensors, Weller
+                  soldering stations, and Labman ultrasonic cleaners — we
+                  source, supply, and support a comprehensive range of
+                  industrial solutions for businesses of all sizes.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   {[
                     {
-                      title: "Quality First",
-                      desc: "ISO 9001:2015 certified manufacturing",
+                      title: "HVAC Specialists",
+                      desc: "Fans, fan coil units & air conditioners",
                     },
                     {
-                      title: "Global Reach",
-                      desc: "Distribution network in 50+ countries",
+                      title: "Safety Equipment",
+                      desc: "Gloves, fire extinguishers & more",
                     },
-                    { title: "Innovation", desc: "15% annual R&D investment" },
                     {
-                      title: "Reliability",
-                      desc: "99.8% on-time delivery rate",
+                      title: "Electrical Components",
+                      desc: "Sensors, relays & soldering tools",
+                    },
+                    {
+                      title: "Trusted Brands",
+                      desc: "Caryaire, IFM, Weller, Labman & more",
                     },
                   ].map((val) => (
                     <div
