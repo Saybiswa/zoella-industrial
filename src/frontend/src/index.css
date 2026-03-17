@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("/assets/fonts/BricolageGrotesque.woff2") format("woff2");
+  font-weight: 200 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "General Sans";
+  src: url("/assets/fonts/GeneralSans.woff2") format("woff2");
+  font-weight: 200 700;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    /* Light mode — industrial steel blue + orange accent */
+    --background: 0.97 0.005 240;
+    --foreground: 0.15 0.04 240;
+    --card: 1 0 0;
+    --card-foreground: 0.15 0.04 240;
+    --popover: 1 0 0;
+    --popover-foreground: 0.15 0.04 240;
+    --primary: 0.25 0.09 255;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.94 0.01 240;
+    --secondary-foreground: 0.25 0.09 255;
+    --muted: 0.94 0.01 240;
+    --muted-foreground: 0.5 0.03 240;
+    --accent: 0.65 0.22 50;
+    --accent-foreground: 1 0 0;
+    --destructive: 0.55 0.22 29;
+    --destructive-foreground: 1 0 0;
+    --border: 0.88 0.02 240;
+    --input: 0.88 0.02 240;
+    --ring: 0.25 0.09 255;
+    --radius: 0.5rem;
+    --chart-1: 0.65 0.22 50;
+    --chart-2: 0.55 0.18 255;
+    --chart-3: 0.45 0.12 200;
+    --chart-4: 0.7 0.15 140;
+    --chart-5: 0.6 0.2 20;
+    --sidebar: 0.97 0.005 240;
+    --sidebar-foreground: 0.15 0.04 240;
+    --sidebar-primary: 0.25 0.09 255;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.94 0.01 240;
+    --sidebar-accent-foreground: 0.25 0.09 255;
+    --sidebar-border: 0.88 0.02 240;
+    --sidebar-ring: 0.25 0.09 255;
+
+    /* Custom brand tokens */
+    --brand-navy: 0.2 0.08 258;
+    --brand-orange: 0.65 0.22 50;
+    --brand-steel: 0.35 0.06 250;
+    --brand-light: 0.96 0.008 240;
+  }
+
+  .dark {
+    --background: 0.11 0.04 258;
+    --foreground: 0.95 0.01 240;
+    --card: 0.15 0.05 258;
+    --card-foreground: 0.95 0.01 240;
+    --popover: 0.15 0.05 258;
+    --popover-foreground: 0.95 0.01 240;
+    --primary: 0.65 0.22 50;
+    --primary-foreground: 0.11 0.04 258;
+    --secondary: 0.2 0.06 258;
+    --secondary-foreground: 0.95 0.01 240;
+    --muted: 0.2 0.06 258;
+    --muted-foreground: 0.6 0.04 240;
+    --accent: 0.65 0.22 50;
+    --accent-foreground: 0.11 0.04 258;
+    --destructive: 0.55 0.22 29;
+    --destructive-foreground: 0.95 0.01 240;
+    --border: 0.25 0.06 258;
+    --input: 0.25 0.06 258;
+    --ring: 0.65 0.22 50;
+    --chart-1: 0.65 0.22 50;
+    --chart-2: 0.55 0.18 255;
+    --chart-3: 0.45 0.12 200;
+    --chart-4: 0.7 0.15 140;
+    --chart-5: 0.6 0.2 20;
+    --sidebar: 0.13 0.045 258;
+    --sidebar-foreground: 0.95 0.01 240;
+    --sidebar-primary: 0.65 0.22 50;
+    --sidebar-primary-foreground: 0.11 0.04 258;
+    --sidebar-accent: 0.2 0.06 258;
+    --sidebar-accent-foreground: 0.95 0.01 240;
+    --sidebar-border: 0.25 0.06 258;
+    --sidebar-ring: 0.65 0.22 50;
+
+    --brand-navy: 0.11 0.04 258;
+    --brand-orange: 0.65 0.22 50;
+    --brand-steel: 0.55 0.06 250;
+    --brand-light: 0.2 0.05 258;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", "General Sans", sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Bricolage Grotesque", sans-serif;
+  }
+}
+
+@layer utilities {
+  .brand-navy {
+    background-color: oklch(var(--brand-navy));
+  }
+  .text-brand-orange {
+    color: oklch(var(--brand-orange));
+  }
+  .bg-brand-orange {
+    background-color: oklch(var(--brand-orange));
+  }
+  .border-brand-orange {
+    border-color: oklch(var(--brand-orange));
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.animate-count {
+  animation: countUp 0.5s ease forwards;
+}
+
+/* Preloader */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.preloader-ring {
+  animation: spin-slow 1.2s linear infinite;
+}
+
+/* Hero mesh gradient */
+.hero-mesh {
+  background: radial-gradient(
+      ellipse at 20% 50%,
+      oklch(0.35 0.12 258 / 0.6) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 80% 20%,
+      oklch(0.25 0.08 270 / 0.5) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 60% 80%,
+      oklch(0.65 0.22 50 / 0.15) 0%,
+      transparent 40%
+    ), oklch(0.15 0.06 258);
+}
+
+/* Industrial pattern overlay */
+.industrial-pattern {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    oklch(1 0 0 / 0.02) 10px,
+    oklch(1 0 0 / 0.02) 11px
+  );
+}
+
+/* Product card hover */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px oklch(0.15 0.06 258 / 0.2);
+}
+
+/* Lightbox */
+.lightbox-overlay {
+  animation: fadeInUp 0.2s ease;
+}
+
+/* Nav link underline */
+.nav-link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: oklch(var(--brand-orange));
+  width: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
